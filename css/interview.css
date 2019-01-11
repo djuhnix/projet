@@ -1,0 +1,12 @@
+video {
+    background-size: cover;
+    background-attachment: scroll;
+    width: 80%;
+    margin-top: 75px;
+    margin-bottom: 15px;
+    background-image: url('../img/code.png');
+}
+
+.page-content {
+    width: 75%;
+}

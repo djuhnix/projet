@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Nous Contacter !</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- Common styles  -->
+  <link rel="stylesheet" href="css/common.css"/>
+  <!-- Custom styles survey -->
+  <<link href="css/survey.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">&lt; DEVELOPPEUR WEB - Mobile &gt;</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">A propos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="dropdown01" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&lt; Développeur &gt;</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="interview.html">Interview</a>
+              <a class="dropdown-item" href="fiche-metier.html">Fiche métier</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--header-->
+  <div class="container">
+    <header class="jumbotron mx-0">
+        <h1 class="display-3">Nous contacter</h1>
+        <h4 >Vous pouvez nous contacter pour nous poser une question ou nous indiquer une erreur.</h4>
+      </header>
+
+    <!--Survey-->
+    <div class="survey jumbotron mx-0 ">
+      <h1>Questionnaire</h1>
+      <div id="warn">
+        <h1>Attention !</h1>
+        <p>L'envoi du formulaire n'a pas encore été implémenté. Notre équipe s'en chargera une fois ses compétences mises à jour</p>
+      </div>
+      <form name="contact" method="POST" action="" enctype="multipart/form-data">
+        <div class="col-lg-6 center">
+          <div class="element">
+            <!--infos générales-->
+            <label>
+              Nom :
+            </label>
+            <br>
+            <input name="nom" type="text">
+          </div>
+          <div class="element">
+            <label>
+              Prénom :
+            </label>
+            <br>
+            <input name="prenom" type="text">
+          </div>
+          <!--note globale-->
+          <div class="element">
+            <label>
+              Quelle note donneriez vous à ce site ?
+            </label>
+            <br>
+            <div id="printRange">
+              <p>Votre note: <span id="printGlobalRange">0</span></p>
+            </div>
+            <input class="slider range"name="globalMark" type="range" min="0" max="5" step="1" value="0" oninput="document.getElementById('printGlobalRange').textContent=value" >
+          </div>
+          <!--note design-->
+          <div class="element">
+            <label>
+              Quelle note donneriez vous au design de ce site ?
+            </label>
+            <br>
+            <div id="printRange">
+              <p>Votre note: <span id="printDesignRange">0</span></p>
+            </div>
+            <input class="slider range" name="designMark" type="range" min="0" max="5" step="1" value="0" oninput="document.getElementById('printDesignRange').textContent=value" >
+          </div>
+          <!--note informations-->
+          <div class="element">
+            <label>
+              Quelle note donneriez pour la qualité des informations  ?
+            </label>
+            <br>
+            <div id="printRange">
+              <p>Votre note: <span id="printInfoRange">0</span></p>
+            </div>
+            <input class="slider range" name="informationsMark" type="range" min="0" max="5" step="1" value="0" oninput="document.getElementById('printInfoRange').textContent=value" >
+          </div>
+          <!--commentaire final-->
+          <div class="element">
+            <label>Vous pouvez nous laisser un petit commentaire :</label>
+            <textarea name="comment"rows="5" cols="40" id="comment"></textarea>
+          </div>
+          <div class="center">
+            <button class="col-4" id="submitButton" onclick="addElement(p,envoi,bonjour)" type="">Submit</button>
+            <button class="col-4" id="resetButton" type="reset">Reset</button>
+          </div>
+
+
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+
+  <!-- Custom JavaScript -->
+  <script src="assets/js/script.js"> </script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>

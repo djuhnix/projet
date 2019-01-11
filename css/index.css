@@ -1,0 +1,34 @@
+@media (min-width: 992px) {
+    .card {
+        height: 100%;
+    }
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background-image: url(../img/ind-bg-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.text-carousel{
+  font-size: 2em
+}
+/*
+.carousel-caption h3, .carousel-caption p{
+  background-color: rgba(35, 42, 72, 0.66);
+  color: #fff;
+  padding: 18px;
+  border-radius: 50px;
+}
+*/
+@media (min-width:768px) {
+    header button {
+        float: left;
+    }
+}
+
+header div div {
+    height: 40px;
+}

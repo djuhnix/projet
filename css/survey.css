@@ -1,0 +1,117 @@
+/*style pour tout le questionnaire*/
+body{
+	background-image: url(../img/ind-bg-1.jpg);
+	background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header{
+	margin-top: 95px;
+}
+#warn{
+	background-color: red;
+	border-radius: 10px;
+	height: 50%;
+	color: white;
+	text-align: center;
+}
+/*padding des éléments*/
+input + label{
+	padding-left: 10%
+}
+/*taille en fonction de la largeur de l'écran*/
+@media(min-width: 960px) {
+	.center{
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+h1, h4{
+		text-align: center;
+	}
+}
+@media (max-width:959px){
+	.center{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
+.element{
+	padding-bottom: 0.5cm;
+	height: auto;
+	width: auto;
+	background-color:rgb(245,245,245);
+	margin-bottom: 10px;
+	border-radius: 10px;
+	padding-left: 2%;
+}
+input{
+	border-color: grey;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 2px 2px rgba(0,0,0,0.2);
+}
+/*modifications visuelles pour le range*/
+.slider{
+	-webkit-appearance:none;
+	appearance: none;
+	width: 50%;
+  height: 15px;
+  outline: none;
+	background: rgb(210,210,210);
+	opacity: 0.7;
+  -webkit-transition: 0.4s; /*transition pour hover =0.2s*/
+}
+.slider:hover {
+  opacity: 1;
+}
+
+/*réglage des problèmes d'affichage en fonction du web kit*/
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 24px;
+  background-color:grey;
+	border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 23px;
+  height: 25px;
+  background-color:grey;
+  cursor: pointer;
+}
+
+textarea{
+	height: 10em;
+	width:90%;
+	background-color: white;
+	border-radius: 10px;
+	border: 2px solid #a6a6a6;
+  border-top-color: #949494;
+  border-radius: 3px;
+	box-shadow: 5px 5px rgba(0,0,0,0.3);
+}
+#submitButton{
+	background-color: #08298A;
+	border-color: blue;
+	border-radius: 10px;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+#resetButton{
+	background-color: #B40404;
+	border-color: red;
+	border-radius: 10px;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+Button:hover{
+	border: 1px inset white;
+}
